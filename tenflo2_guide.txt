@@ -1,0 +1,27 @@
+1. deactivate current environment to switch to base environment
+
+2. create new environment and specify python version:
+
+```
+conda create --name tenflo2 python=3.7
+``
+
+3. install packages from pip using requirements file
+(optional: cd to directory of requirement file)
+
+```
+pip install -r C:\Users\mle001\requirements_pip_tenflo2.txt
+```
+
+4. install packages from conda using requirments file
+(optional: cd to directory of requirement file)
+(note: packages installed with conda include graphviz, which requires independent installations outside of python)
+```
+conda install --file C:\Users\mle001\requirements_conda_tenflo2.txt
+```
+
+5. enable jupyter notebook extensions
+
+```
+jupyter contrib nbextension install
+```
